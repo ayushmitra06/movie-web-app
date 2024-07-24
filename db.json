@@ -1,0 +1,23 @@
+{
+    "movies": [
+      {
+        "title": "Avengers",
+        "image": "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+        "releaseYear": 2020,
+        "imdbRating": 8.2
+      },
+      {
+        "title": "Inception",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg",
+        "releaseYear": 2021,
+        "imdbRating": 7.4
+      },
+      {
+        "title": "Interstellar",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0zt0lp-O3XdL8zzdrEvyzmcl6kOwfgbv4xQ&s",
+        "releaseYear": 2022,
+        "imdbRating": 9.1
+      }
+    ]
+  }
+  

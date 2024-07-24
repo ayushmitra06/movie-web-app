@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #232323;
+      color: #ffec1c;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #000000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #ffec1c;
+    }
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .controls label {
+      margin-right: 10px;
+    }
+    .controls select, .controls input {
+      padding: 5px;
+      font-size: 16px;
+    }
+    #movie-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .movie {
+      background-color: #fff;
+      border: 1px solid #c9c9c9;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .movie img {
+      width: 100%;
+      height: auto;
+    }
+    .movie-info {
+      padding: 15px;
+    }
+    .movie-info h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: #000000;
+    }
+    .movie-info p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Movie List</h1>
+    <div class="controls">
+      <div>
+        <label for="sort">Sort by IMDb Rating:</label>
+        <select id="sort">
+          <option value="asc">Ascending</option>
+          <option value="desc">Descending</option>
+        </select>
+      </div>
+      <div>
+        <label for="filter-year">Filter by Release Year:</label>
+        <input type="number" id="filter-year" placeholder="Enter year">
+      </div>
+    </div>
+    <div id="movie-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
